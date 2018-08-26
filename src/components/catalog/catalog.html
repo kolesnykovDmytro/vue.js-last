@@ -1,0 +1,110 @@
+<layout>
+  <section class="catalog">
+    <div class="wrapper">
+      <div class="wrapper-content">
+        <div class="sub-title">
+          <h2>Наші продукти</h2>
+        </div>
+        <div>
+        </div>
+        <div class="catalog-content row">
+          <!-- begin catalog__item -->
+          <div class="catalog__item item-first">
+            <div class="catalog-desc">
+              <div class="photo-container photo-container1"></div>
+              <div class="slide">
+                <h4 class="slide__title">Whey Way Nutrition isolate 92 ваніль</h4>
+                <p>Цей набір протеїнів містить безліч амінокислот, необхідних для розвитку організму вцілому, особливо для нарощування м’язової маси і спалювання жирів. До складу входтять незамінні амінокислоти, які людський організм не здатний виробляти самостійно і має отримувати з харчуванням.</p>
+                <div class="slide__action">
+                  <button class="action__btn box bar" @click.stop="dialog = true">Замовити</button>
+                  <router-link class="nav__link box bar" to="/first">Детальніше</router-link>
+                </div>
+              </div>
+              <router-link class="nav__link" to="/first"></router-link>
+            </div>
+          </div>
+          <!-- end catalog__item -->
+          <!-- begin catalog__item -->
+          <div class="catalog__item item-second">
+            <div class="catalog-desc">
+              <div class="photo-container photo-container2"></div>
+              <h2>Image 0 </h2>
+              <div class="slide">
+                <h4 class="slide__title">Whey Way Nutrition isolate 92 шоколад</h4>
+                <p>Цей набір протеїнів містить безліч амінокислот, необхідних для розвитку організму вцілому, особливо для нарощування м’язової маси і спалювання жирів. До складу входтять незамінні амінокислоти, які людський організм не здатний виробляти самостійно і має отримувати з харчуванням.</p>
+                <div class="slide__action">
+                  <button class="action__btn box bar">Замовити</button>
+                  <router-link class="nav__link box bar" to="/fourth">Детальніше</router-link>
+                </div>
+              </div>
+              <router-link class="nav__link" to="/second"></router-link>
+            </div>    
+          </div>
+          <!-- end catalog__item -->
+          <!-- begin catalog__item -->
+          <div class="catalog__item item-third">
+            <div class="catalog-desc">
+              <div class="photo-container photo-container3"></div>
+              <h2>Image 0 </h2>
+              <div class="slide">
+                <h4 class="slide__title">Whey Way Nutrition concentrate 72 шоколад</h4>
+                <p>Цей набір протеїнів містить безліч амінокислот, необхідних для розвитку організму вцілому, особливо для нарощування м’язової маси і спалювання жирів. До складу входтять незамінні амінокислоти, які людський організм не здатний виробляти самостійно і має отримувати з харчуванням.</p>
+                <div class="slide__action">
+                  <button class="action__btn box bar">Замовити</button>
+                  <router-link class="nav__link box bar" to="/third">Детальніше</router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end catalog__item --> 
+          <!-- begin catalog__item -->
+          <div class="catalog__item item-third">
+            <div class="catalog-desc">
+              <div class="photo-container photo-container4"></div>
+              <h2>Image 0 </h2>
+              <div class="slide">
+                <h4 class="slide__title">Whey Way Nutrition concentrate 72 ваніль</h4>
+                <p>Цей набір протеїнів містить безліч амінокислот, необхідних для розвитку організму вцілому, особливо для нарощування м’язової маси і спалювання жирів. До складу входтять незамінні амінокислоти, які людський організм не здатний виробляти самостійно і має отримувати з харчуванням.</p>
+                <div class="slide__action">
+                  <button class="action__btn box bar">Замовити</button>
+                  <router-link class="nav__link box bar" to="/fourth">Детальніше</router-link>
+                </div>              
+              </div>
+            </div>     
+          </div>
+          <!-- end catalog__item --> 
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal-template">
+    <v-app id="inspire">
+      <v-layout row justify-center>
+        <v-dialog v-model="dialog" max-width="500">
+          <v-card>
+            <div class="modal-title">
+              <p>Залиште Ваші дані і наш менеджер зв'яжеться із Вами найближчим часом </p>
+            </div>
+            <form action="#" class="modal-form">
+              <div class="form-group">
+                <!-- <label class="label__item" for="item-name">Ваше ім'я</label> -->
+                <input class="input__item" id="item-name" placeholder="Ваше ім'я" type="text">
+              </div>
+              <div class="form-group">
+                <!-- <label class="label__item" for="item-phone">Ваш телефон</label> -->
+                <input class="input__item" id="item-phone" placeholder="Ваш телефон" type="text">
+              </div>
+              <div class="form-group">
+                  <!-- <label class="label__item" for="item-phone">Ваш email</label> -->
+                  <input class="input__item" id="item-email" placeholder="Ваш email" type="text">
+              </div>
+              <div class="form-group">
+                <input type="submit" class="form__btn" value="Відправити">
+              </div>
+            </form>
+          </v-card>
+        </v-dialog>
+      </v-layout>
+    </v-app>
+  </div>
+</layout>
